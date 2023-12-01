@@ -1,0 +1,13 @@
+[package]
+name = "libaero"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "libaero"
+crate-type = ["cdylib"]
+
+[dependencies]
+libc = { version = "0.2.149", default-features = false }
+serde = { version = "1.0.190", default-features = false, features = ["alloc", "serde_derive"] }
+serde_json = { version = "1.0.108", default-features = false, features = ["alloc"] }
